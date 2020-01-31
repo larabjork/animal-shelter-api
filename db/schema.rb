@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_31_185549) do
+ActiveRecord::Schema.define(version: 2020_01_31_232252) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,32 +18,17 @@ ActiveRecord::Schema.define(version: 2020_01_31_185549) do
   create_table "animals", force: :cascade do |t|
     t.string "name"
     t.string "date_available"
-    t.string "breed"
+    t.string "animal_type"
     t.string "sex"
     t.string "color"
+    t.integer "age"
+    t.integer "weight"
     t.string "location"
+    t.integer "kennel"
     t.string "profile"
     t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "age"
-    t.integer "weight"
-    t.integer "kennel"
-  end
-
-  create_table "sponsors", force: :cascade do |t|
-    t.string "sponsor_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sponsorships", force: :cascade do |t|
-    t.bigint "animal_id"
-    t.bigint "sponsor_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["animal_id"], name: "index_sponsorships_on_animal_id"
-    t.index ["sponsor_id"], name: "index_sponsorships_on_sponsor_id"
   end
 
 end

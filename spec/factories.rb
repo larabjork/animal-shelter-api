@@ -14,8 +14,5 @@ FactoryBot.define do
     picture { Faker::LoremPixel.image }
   end
 
-  factory :sponsor, class: Sponsor do
-    sponsor_name { Faker::Name.name }
-  end
-  
+
 end

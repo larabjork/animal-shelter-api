@@ -1,0 +1,26 @@
+# let (:animal) { :name => 'ramona', :date_available => '2019-12-28', :breed => 'domestic medium hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 8,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
+
+# before do
+#   put '/animals/:id', params: { :name => 'ramona', :date_available => '2019-12-28', :breed => 'domestic medium hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 8,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
+# end
+
+
+def change
+  create_table :animals do |t|
+    t.column :name, :string
+    t.column :date_available, :string
+    t.column :animal_type, :string
+    t.column :breed, :string
+    t.column :sex, :string
+    t.column :color, :string
+    t.column :age, :string
+    t.column :weight, :string
+    t.column :location, :string
+    t.column :kennel, :string
+    t.column :profile, :string
+    t.column :picture, :string
+    t.column :video, :string
+    t.timestamps
+  end
+end
+end
