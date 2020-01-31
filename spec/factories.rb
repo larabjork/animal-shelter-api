@@ -3,7 +3,7 @@ FactoryBot.define do
   factory :animal, class: Animal do
     name { Faker::Creature::Cat.name }
     date_available { Faker::Date.between(from: 90.days.ago, to: Date.today) }
-    breed { Faker::Creature::Cat.breed }
+    animal_type { Faker::Creature::Cat.breed }
     sex { Faker::Gender.binary_type }
     color { Faker::Color.color_name }
     age { 12 }

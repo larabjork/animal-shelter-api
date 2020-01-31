@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "post an animal route", :type => :request do
 
   before do
-    post '/animals', params: { :name => 'ramona', :date_available => '2019-12-31', :breed => 'domestic long hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 7,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
+    post '/animals', params: { :name => 'ramona', :date_available => '2019-12-31', :animal_type => 'domestic long hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 7,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
   end
 
   it 'returns the animal name' do

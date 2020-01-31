@@ -19,7 +19,7 @@ class Seed
       animal = Animal.create!(
         name: Faker::Creature::Cat.name,
         date_available: Faker::Date.between(from: 90.days.ago, to: Date.today),
-        breed: Faker::Creature::Cat.breed,
+        animal_type: Faker::Creature::Cat.breed,
         sex: Faker::Gender.binary_type,
         color: Faker::Color.color_name,
         age: Faker::Number.between(from: 1, to: 15),
@@ -29,7 +29,7 @@ class Seed
         profile: Faker::Lorem.sentence,
         picture: Faker::LoremPixel.image(size: "50x60", is_gray: false, category: 'cats')
       )
-      puts "Cat #{i}: Cat is #{animal.name}. Available as of  #{animal.date_available}. Breed: #{animal.breed}. Sex: #{animal.sex}. Color: #{animal.color} Age: #{animal.age} years. Weight: #{animal.weight} pounds. Location: #{animal.location} wing. Kennel: #{animal.kennel} . Profile: #{animal.profile} Picture: #{animal.picture} ."
+      puts "Cat #{i}: Cat is #{animal.name}. Available as of  #{animal.date_available}. Breed: #{animal.animal_type}. Sex: #{animal.sex}. Color: #{animal.color} Age: #{animal.age} years. Weight: #{animal.weight} pounds. Location: #{animal.location} wing. Kennel: #{animal.kennel} . Profile: #{animal.profile} Picture: #{animal.picture} ."
 
     end
   end
