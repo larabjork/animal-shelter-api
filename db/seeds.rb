@@ -30,8 +30,16 @@ class Seed
         picture: Faker::LoremPixel.image(size: "50x60", is_gray: false, category: 'cats')
       )
       puts "Cat #{i}: Cat is #{animal.name}. Available as of  #{animal.date_available}. Breed: #{animal.breed}. Sex: #{animal.sex}. Color: #{animal.color} Age: #{animal.age} years. Weight: #{animal.weight} pounds. Location: #{animal.location} wing. Kennel: #{animal.kennel} . Profile: #{animal.profile} Picture: #{animal.picture} ."
+
+      1.times do |j|
+        sponsor = Sponsor.create!(
+          sponsor_name: Faker::Name.name
+        )
+        puts "Sponsor #{j}: Sponsor #{sponsor.sponsor_name}."
+      end
     end
   end
+
 end
 
 Seed.begin
