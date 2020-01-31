@@ -369,51 +369,6 @@
           null
         ]
       },
-      "/Users/lbjork/Desktop/animal_shelter/app/controllers/sponsors_controller.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/lbjork/Desktop/animal_shelter/app/jobs/application_job.rb": {
         "lines": [
           1,
@@ -442,8 +397,6 @@
           1,
           1,
           1,
-          1,
-          1,
           null
         ]
       },
@@ -454,20 +407,8 @@
           null
         ]
       },
-      "/Users/lbjork/Desktop/animal_shelter/app/models/sponsor.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/lbjork/Desktop/animal_shelter/app/models/sponsorship.rb": {
         "lines": [
-          1,
-          1,
-          1,
           null
         ]
       },
@@ -489,9 +430,6 @@
           41,
           null,
           null,
-          1,
-          1,
-          null,
           null,
           null
         ]
@@ -501,8 +439,6 @@
           1,
           null,
           1,
-          1,
-          null,
           null,
           null
         ]
@@ -571,6 +507,6 @@
         ]
       }
     },
-    "timestamp": 1580511476
+    "timestamp": 1580513461
   }
 }

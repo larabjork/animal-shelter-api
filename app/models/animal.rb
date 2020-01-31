@@ -1,7 +1,7 @@
 class Animal < ApplicationRecord
   validates :name, presence: true
   validates :date_available, presence: true
-  validates :breed, presence: true
+  validates :animal_type, presence: true
   validates :sex, presence: true
   validates :color, presence: true
   validates :location, presence: true

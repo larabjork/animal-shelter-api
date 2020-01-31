@@ -1,7 +1,7 @@
-# let (:animal) { :name => 'ramona', :date_available => '2019-12-28', :breed => 'domestic medium hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 8,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
+# let (:animal) { :name => 'ramona', :date_available => '2019-12-28', :animal_type => 'domestic medium hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 8,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
 
 # before do
-#   put '/animals/:id', params: { :name => 'ramona', :date_available => '2019-12-28', :breed => 'domestic medium hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 8,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
+#   put '/animals/:id', params: { :name => 'ramona', :date_available => '2019-12-28', :animal_type => 'domestic medium hair', :sex => 'female', :color => 'brown tabby',  :age => 6,  :weight => 8,  :location => 'Orion', :kennel => 23,  :profile => 'completely lovable',  :picture => 'insert url here' }
 # end
 
 
@@ -10,7 +10,7 @@ def change
     t.column :name, :string
     t.column :date_available, :string
     t.column :animal_type, :string
-    t.column :breed, :string
+    t.column :animal_type, :string
     t.column :sex, :string
     t.column :color, :string
     t.column :age, :string
