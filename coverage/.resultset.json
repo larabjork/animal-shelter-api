@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lbjork/desktop/animal_shelter/spec/requests/put_animal_spec.rb": {
+      "/Users/lbjork/desktop/animal_shelter/spec/requests/delete_animal_spec.rb": {
         "lines": [
           1,
           null,
@@ -12,7 +12,6 @@
           2,
           null,
           null,
-          1,
           1,
           1,
           null,
@@ -330,15 +329,6 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
           0,
           0,
           0,
@@ -348,8 +338,17 @@
           null,
           null,
           1,
-          1,
           2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
           null,
           null
         ]
@@ -420,17 +419,17 @@
           1,
           null,
           1,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
           null,
@@ -447,6 +446,6 @@
         ]
       }
     },
-    "timestamp": 1580671068
+    "timestamp": 1580671400
   }
 }
