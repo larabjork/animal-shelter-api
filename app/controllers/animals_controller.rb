@@ -12,8 +12,14 @@ class AnimalsController < ApplicationController
   end
 
   def create
-    @animal = Animal.create!(animal_params)
-    json_response(@animal, :created)
+    begin
+      @animal = Animal.create!(animal_params)
+      json_response(@animal, :created)
+    rescue ActiveRecord::RecordInvalid => e
+      render status: 422, json: {
+        message: "You are missing a required field."
+      }
+    end
   end
 
   def update
