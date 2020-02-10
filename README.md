@@ -25,7 +25,7 @@ _* A user should be able to create an account so that they can sign up to sponso
 _* An admin should be able to see all sponsors along with data about which animals are currently sponsored and financial information, such as total amount of money provided by sponsors for a given time period._
 
 ### Technologies Used
-Ruby 2.6.5, Rails 5.2.4, Bundler, PSQL/Postgres
+Ruby 2.6.5, Rails 5.2.4, Bundler, PSQL/Postgres, Postman
 Gems added manually after initial project setup: Capybara, faker, factory_bot_rails, launchy, pry, rspec-rails, shoulda-matchers, and simplecov.
 Project was written using Google Chrome. No other browsers were tested.
 
@@ -40,6 +40,25 @@ Project was written using Google Chrome. No other browsers were tested.
 8. To query the database using SQL commands, run **psql** in the terminal. Enter **\c animal_shelter_development**. For basic SQL commands, see https://www.w3schools.com/sql/sql_syntax.asp and https://www.learnhowtoprogram.com/ruby-and-rails/ruby-database-basics/sql-basics.
 
 If something doesn't display correctly or goes wrong somehow, please contact me at <lara.m.bjork@gmail.com> and I will do my best to troubleshoot for you.
+
+### Endpoint Descriptions
+Endpoints are described in the project file **Animal Shelter.postman_collection.json**, which can be imported directly into Postman to test API calls.
+
+Before testing any of the endpoints, make sure that the Rails server is running (enter **rails s** or **rails server**).
+
+Once you have followed the project setup instructions above, to import the endpoint descriptions:
+* Open the Postman app.
+* Click on **Import** in the upper left corner.
+* In the window that presents **Import File** as an option, navigate to select the postman collection file named above.
+* Once you have selected the file, click **Open**, and the file will be available under the heading **Collections**.
+* Within the **Animal Shelter** collection, you will see five API requests:
+  * **GET animals:** http://localhost:3000/animals/ shows all animal records
+  * **GET animal:** http://localhost:3000/animals/:id shows a specific animal record, by ID
+  * **POST animal:** http://localhost:3000/animals/ posts all required information for a new animal record
+  * **PUT animal:** http://localhost:3000/animals/:id updates any field in an animal record (except ID)
+  * **DELETE animal:** http://localhost:3000/animals/:id deletes a specific animal record, by ID
+* To see these descriptions within Postman, right-click on each request and select **Edit**.
+
 
 ### Known Issues and Limitations
 * No known bugs.

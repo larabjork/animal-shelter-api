@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "2b187715-4a34-40b2-a38f-13a713c58163",
+		"name": "Animal Shelter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET animals",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date_available",
+							"value": "2020-01-30",
+							"type": "text"
+						},
+						{
+							"key": "animal_type",
+							"value": "domestic short hair",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "pink",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Cygnus",
+							"type": "text"
+						},
+						{
+							"key": "profile",
+							"value": "Very cute! Purrs loudly.",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"value": "cutecats.com/1232",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"value": "put url here",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "kennel",
+							"value": "43",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Princess Caroline",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				},
+				"description": "http://localhost:3000/animals/ shows all animal records"
+			},
+			"response": []
+		},
+		{
+			"name": "POST animals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date_available",
+							"value": "2020-01-30",
+							"type": "text"
+						},
+						{
+							"key": "animal_type",
+							"value": "domestic short hair",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "pink",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Cygnus",
+							"type": "text"
+						},
+						{
+							"key": "profile",
+							"value": "Very cute! Purrs loudly.",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"value": "cutecats.com/1232",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "kennel",
+							"value": "43",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Princess Caroline",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						""
+					]
+				},
+				"description": "http://localhost:3000/animals/ posts all required information for a new animal record"
+			},
+			"response": []
+		},
+		{
+			"name": "GET animal",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date_available",
+							"value": "2020-01-30",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "animal_type",
+							"value": "domestic short hair",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "color",
+							"value": "pink",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "Cygnus",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "profile",
+							"value": "Very cute! Purrs loudly.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "picture",
+							"value": "cutecats.com/1232",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "weight",
+							"value": "12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "kennel",
+							"value": "43",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Princess Caroline",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				},
+				"description": "http://localhost:3000/animals/:id shows a specific animal record, by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT animal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date_available",
+							"value": "2020-01-30",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "animal_type",
+							"value": "domestic short hair",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "color",
+							"value": "coral",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Cygnus",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "profile",
+							"value": "Very cute! Purrs loudly.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "picture",
+							"value": "cutecats.com/1232",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "weight",
+							"value": "12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "kennel",
+							"value": "43",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Princess Caroline",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				},
+				"description": "http://localhost:3000/animals/:id updates any field in an animal record (except ID)"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE animal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date_available",
+							"value": "2020-01-30",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "animal_type",
+							"value": "domestic short hair",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "color",
+							"value": "coral",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "Cygnus",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "profile",
+							"value": "Very cute! Purrs loudly.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "picture",
+							"value": "cutecats.com/1232",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "weight",
+							"value": "12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "kennel",
+							"value": "43",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Princess Caroline",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/animals/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animals",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				},
+				"description": "http://localhost:3000/animals/:id deletes a specific animal record, by ID"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
