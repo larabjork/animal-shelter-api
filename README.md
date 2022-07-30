@@ -71,4 +71,4 @@ https://github.com/larabjork/animal-shelter-api.git
 ### License
 This software is licensed under the MIT license.
 
-Copyright (c) 2020 Lara Bjork
+Copyright (c) 2020 Lara Bjork   
